@@ -757,10 +757,11 @@ MonoBehaviour:
 
     D: Move right
 
-    Hold SPACE: Animate Dead (keep held
-    until skeleton appears)
+    Hold SPACE: Animate Dead (hold until
+    skeleton appears - must be near & facing corpse)
 
-    Hold SPACE (as skeleton): Relinquish control'
+    Hold SPACE (as skeleton):
+    Relinquish control'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

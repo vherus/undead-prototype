@@ -45,17 +45,15 @@ public class RaiseDead : MonoBehaviour
             if (corpse != null && IsFacingCorpse(corpse)) {
                 Animator corpseAnim = corpse.GetComponent<Animator>();
 
-                if (corpseAnim.GetBool("Dead") && !corpseAnim.GetBool("Risen")) {
-                    #nullable enable
-                    Transform? skeleton = corpse.transform.Find("Skeleton");
-                    #nullable disable
+                #nullable enable
+                Transform? skeleton = corpse.transform.Find("Skeleton");
+                #nullable disable
 
-                    if (skeleton != null) {
-                        animator.SetBool(PlayerBools.CONTROLLING_DEAD, true);
-                        skeleton.gameObject.SetActive(true);
+                if (corpseAnim.GetBool("Dead") && !corpseAnim.GetBool("Risen") && skeleton != null) {
+                    animator.SetBool(PlayerBools.CONTROLLING_DEAD, true);
+                    skeleton.gameObject.SetActive(true);
 
-                        corpseAnim.SetBool("Risen", true);
-                    }
+                    corpseAnim.SetBool("Risen", true);
                 }
             }
         }

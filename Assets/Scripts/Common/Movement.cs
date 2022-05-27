@@ -3,7 +3,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField]
-    private float movementForce = 5;
+    private float movementForce = 5f;
 
     private float movementX;
     private Rigidbody2D body;
@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
         if (!gameObject.activeSelf) {
             return;
         }
-        
+
         movementX = Input.GetAxisRaw("Horizontal");
 
         if (movementX == 0) {
