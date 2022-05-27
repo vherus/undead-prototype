@@ -1,6 +1,6 @@
 using UnityEngine;
-//1.917
-public class MinionMovement : MonoBehaviour
+
+public class Movement : MonoBehaviour
 {
     [SerializeField]
     private float movementForce = 5;
@@ -9,11 +9,13 @@ public class MinionMovement : MonoBehaviour
     private Rigidbody2D body;
     private SpriteRenderer sRenderer;
     private Animator animator;
+    private IMoveable moveableObject;
 
-    void Awake() {
+    private void Awake() {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sRenderer = GetComponent<SpriteRenderer>();
+        moveableObject = GetComponent<IMoveable>();
     }
 
     void FixedUpdate() {
@@ -24,7 +26,7 @@ public class MinionMovement : MonoBehaviour
         if (!gameObject.activeSelf) {
             return;
         }
-
+        
         movementX = Input.GetAxisRaw("Horizontal");
 
         if (movementX == 0) {
@@ -32,19 +34,19 @@ public class MinionMovement : MonoBehaviour
             return;
         }
 
-        if (!animator.GetBool("Release") && !animator.GetBool("Dead")) {
+        if (moveableObject.CanWalk()) {
             StartWalking();
         }
     }
 
     private void StopWalking() {
-        animator.SetBool("Walk", false);
+        animator.SetBool(MovementBools.WALK, false);
     }
 
     private void StartWalking() {
         sRenderer.flipX = movementX < 0;
         transform.position += new Vector3(movementX, 0f, 0f) * movementForce * Time.deltaTime;
 
-        animator.SetBool("Walk", true);
+        animator.SetBool(MovementBools.WALK, true);
     }
 }
