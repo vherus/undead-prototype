@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 2096299343}
   - component: {fileID: 7638955096584984876}
   - component: {fileID: 7367037168726283785}
+  - component: {fileID: 6950136242850004784}
   m_Layer: 6
   m_Name: Skeleton
-  m_TagString: Untagged
+  m_TagString: Minion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementForce: 5
+  jumpForce: 5
 --- !u!114 &7367037168726283785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,5 +185,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c7f28f12f2fde3b4faac26706f9c4411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6950136242850004784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392957392930158576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1717c9b23982a4f899c65d1f9e0b5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

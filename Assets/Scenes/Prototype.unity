@@ -7492,37 +7492,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1007240548447920202, guid: fbd49e51a4e84a042ad78093fd9da554, type: 3}
   m_PrefabInstance: {fileID: 1915618110}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1935202033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1935202034}
-  m_Layer: 3
-  m_Name: CamOffset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1935202034
+--- !u!4 &1935202034 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1935202034, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
+  m_PrefabInstance: {fileID: 6762110124353534803}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935202033}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.222, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6762110124353534804}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975057495
 GameObject:
   m_ObjectHideFlags: 0
@@ -8616,14 +8590,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
-    - target: {fileID: 6792465317154508916, guid: b51c417b152626b46b69b89a46c330d8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6792465317154508916, guid: b51c417b152626b46b69b89a46c330d8, type: 3}
-      propertyPath: m_TagString
-      value: Minion
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b51c417b152626b46b69b89a46c330d8, type: 3}
 --- !u!1001 &6762110124353534803
@@ -8633,10 +8599,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 159900286, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
-      propertyPath: jumpForce
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 6762110124512098521, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8685,26 +8647,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6762110124512098524, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
-      propertyPath: offsetX
-      value: 0.888
-      objectReference: {fileID: 0}
-    - target: {fileID: 6762110124512098524, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
-      propertyPath: camOffset
-      value: 
-      objectReference: {fileID: 1935202033}
-    - target: {fileID: 6762110124512098527, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6762110124512098527, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
-      propertyPath: m_GravityScale
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
---- !u!4 &6762110124353534804 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6762110124512098521, guid: 23b83d8630a3a2447964609948f1cb5e, type: 3}
-  m_PrefabInstance: {fileID: 6762110124353534803}
-  m_PrefabAsset: {fileID: 0}

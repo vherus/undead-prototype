@@ -31,7 +31,7 @@ public class Player : MonoBehaviour, IMoveable
     }
 
     public bool CanWalk() {
-        return !animator.GetBool(PlayerBools.RAISING_DEAD) && !animator.GetBool(PlayerBools.CONTROLLING_DEAD);
+        return !animator.GetBool(PlayerBools.RAISING_DEAD) && !animator.GetBool(PlayerBools.CONTROLLING_DEAD) && !animator.GetBool(PlayerBools.ANIMATING_DEAD);
     }
 
     public bool CanJump() {

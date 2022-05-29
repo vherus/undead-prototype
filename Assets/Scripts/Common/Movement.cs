@@ -4,11 +4,20 @@ public class Movement : MonoBehaviour
 {
     [SerializeField]
     private float movementForce = 5f;
+    public float MovementForce {
+        get { return movementForce; }
+        private set { movementForce = value; }
+    }
 
     [SerializeField]
     private float jumpForce = 10f;
 
     private float movementX;
+    public float MovementX {
+        get { return movementX; }
+        private set { movementX = value; }
+    }
+
     private Rigidbody2D body;
     private SpriteRenderer sRenderer;
     private Animator animator;
