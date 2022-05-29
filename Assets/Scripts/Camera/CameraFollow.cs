@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-// deprecated
+// deprecated, janky attempt. Use Cinemachine + CameraBehaviour, not this! Keeping for future reference
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField]
