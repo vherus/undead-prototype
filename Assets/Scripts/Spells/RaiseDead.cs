@@ -74,14 +74,14 @@ public class RaiseDead : MonoBehaviour
     }
 
     private void HandleRaiseDead() {
-        if (Input.GetKeyDown(KeyCode.Space) && !animator.GetBool(PlayerBools.CONTROLLING_DEAD)) {
+        if (Input.GetKeyDown(KeyCode.E) && !animator.GetBool(PlayerBools.CONTROLLING_DEAD)) {
             animator.SetBool(PlayerBools.RAISING_DEAD, true);
 
             StartCoroutine("ControlDeadTransition");
             return;
         }
 
-        if (Input.GetKeyUp(KeyCode.Space)) {
+        if (Input.GetKeyUp(KeyCode.E)) {
             StopCoroutine("ControlDeadTransition");
             animator.SetBool(PlayerBools.RAISING_DEAD, false);
         }

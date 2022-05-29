@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - EnemyList
+  - Minion
   layers:
   - Default
   - TransparentFX

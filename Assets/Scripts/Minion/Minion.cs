@@ -11,4 +11,8 @@ public class Minion : MonoBehaviour, IMoveable
     public bool CanWalk() {
         return !animator.GetBool("Release") && !animator.GetBool("Dead");
     }
+
+    public bool CanJump() {
+        return true;
+    }
 }

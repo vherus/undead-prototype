@@ -5,6 +5,9 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float movementForce = 5f;
 
+    [SerializeField]
+    private float jumpForce = 10f;
+
     private float movementX;
     private Rigidbody2D body;
     private SpriteRenderer sRenderer;
@@ -20,6 +23,14 @@ public class Movement : MonoBehaviour
 
     void FixedUpdate() {
         HandleMovement();
+        HandleJump();
+    }
+
+    private void HandleJump() {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            body.velocity = new Vector2(0f, 0f);
+            body.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+        }
     }
 
     private void HandleMovement() {

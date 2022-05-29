@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+// deprecated
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField]
@@ -33,6 +34,7 @@ public class CameraFollow : MonoBehaviour
         flipX = sRenderer.flipX;
         leftLimit = leftBoundary.transform.position.x + boundaryOffset;
         rightLimit = rightBoundary.transform.position.x - boundaryOffset;
+        
     }
 
     void LateUpdate() {
