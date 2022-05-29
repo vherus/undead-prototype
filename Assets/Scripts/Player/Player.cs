@@ -4,12 +4,10 @@ public class Player : MonoBehaviour, IMoveable
 {
     private Animator animator;
     private SpriteRenderer sRenderer;
-    private bool flipX;
 
     private void Awake() {
         animator = GetComponent<Animator>();
         sRenderer = GetComponent<SpriteRenderer>();
-        flipX = sRenderer.flipX;
     }
 
     public bool CanWalk() {
